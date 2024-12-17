@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
-
+*Compilers-VM*
+*coursework\Week2*
+*coursework/Week2*
 # Compiled Object files
 *.slo
 *.lo
