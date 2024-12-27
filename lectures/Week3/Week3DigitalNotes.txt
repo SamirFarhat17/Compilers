@@ -27,6 +27,16 @@ Recursive Descent Algorithm(RD Algo)
 	- The nth production of S(terminal S)
 	- Try all the productions of S
 
+RD Algo Limitations
+- 1-step Backtracking is insufficient, we should be able to be "general"
+- sufficient for grammars where for any non-terminal at most one production can succeed
+- Can work with left factoring(more later)
+
+Left Recursion
+- A left-recursive grammar has a non terminal S when you do a non empty sequence of rewrites you get a resultant non-terminal S(infinite loop)
+- Left recursive grammars do not work with RD Algo
+- Can rewrite using right-recursion
+
 
 
 
