@@ -1,0 +1,34 @@
+Ambiguity
+- Grammar that has more than one valid parse tree for some string(This is bad)
+- How to handle
+	- Most direct method is to rewrite unambiguously and enforce precedence
+	- Conversion is impossible automatically unless we implement a disambiguation mechanism(precedence and associativity)
+
+Error Handling 
+- Many Kinds: Lexical, Syntax, Semantic, Correctness
+- Error handler should report accurately and clearly, recover quickly and not slow down compilation of valid code
+Kinds:
+	- Panic mode: Simplest, when error detected discards tokens until clear role is found, continue from there
+		- Synchronizing(typical) tokens
+	- Error productions
+	- Automatic local or global correction 
+
+Abstract Syntax Trees(AST)
+- Structural representation of a Program
+
+Recursive Descent Parsing
+- Parsing Algorithm: Backtracking in tree 1-step when non terminating is generated without a match
+
+
+Recursive Descent Algorithm(RD Algo)
+- Let TOKEN be the type of tokens and let the global NEXT point to the next input token
+1. Define Boolean functions that check for a match of 
+	- A given terminal token
+	- The nth production of S(terminal S)
+	- Try all the productions of S
+
+
+
+
+
+
